@@ -1,0 +1,9 @@
+---
+title: 'Agile data science: a manifesto'
+author: "J. J. Merelo"
+date: "3/4/2021"
+output: html_document
+bibliography: agile.bib
+---
+
+## References
