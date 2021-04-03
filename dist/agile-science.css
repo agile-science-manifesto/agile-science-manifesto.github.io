@@ -1,10 +1,15 @@
 /**
- * Black theme for reveal.js.
- *
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Zilla+Slab+Highlight&display=swap');
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto; }
+
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -12,17 +17,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #111;
-  --main-font: Open Sans, sans-serif;
+  --background-color: #002b36;
+  --main-font: Lato, sans-serif;
   --main-font-size: 40px;
-  --main-color: #eee;
+  --main-color: #93a1a1;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: Montserrat, Impact, sans-serif;
-  --heading-color: #eee;
+  --heading-font: Josefin Sans, Impact, sans-serif;
+  --heading-color: #eee8d5;
   --heading-line-height: 1.2;
-  --heading-letter-spacing: -0.03em;
-  --heading-text-transform: none;
+  --heading-letter-spacing: normal;
+  --heading-text-transform: uppercase;
   --heading-text-shadow: none;
   --heading-font-weight: normal;
   --heading1-text-shadow: none;
@@ -31,29 +36,29 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #e7ad52;
-  --link-color-hover: #f3d7ac;
-  --selection-background-color: #e7ad52;
+  --link-color: #268bd2;
+  --link-color-hover: #78b9e6;
+  --selection-background-color: #d33682;
   --selection-color: #fff; }
 
 .reveal-viewport {
-  background: #111;
-  background-color: #111; }
+  background: #002b36;
+  background-color: #002b36; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #eee; }
+  color: #93a1a1; }
 
 .reveal ::selection {
   color: #fff;
-  background: #e7ad52;
+  background: #d33682;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #e7ad52;
+  background: #d33682;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -71,17 +76,18 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
-  font-family: "Montserrat", Impact, sans-serif;
+  color: #eee8d5;
+  font-family: "Josefin Sans", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: none;
+  letter-spacing: normal;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 3.77em;
+}
 
 .reveal h2 {
   font-size: 2.11em; }
@@ -247,49 +253,49 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #e7ad52;
+  color: #268bd2;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #f3d7ac;
+  color: #78b9e6;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #d08a1d; }
+  background: #1a6091; }
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #eee;
+  border: 4px solid #93a1a1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a .r-frame {
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #e7ad52;
+  border-color: #268bd2;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #e7ad52; }
+  color: #268bd2; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #e7ad52; }
+  color: #268bd2; }
 
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #111; } }
+    background-color: #002b36; } }
