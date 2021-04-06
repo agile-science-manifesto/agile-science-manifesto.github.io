@@ -6,4 +6,6 @@ output: html_document
 bibliography: agile.bib
 ---
 
+By *agile*, we usually imply a mindset that is applied to the whole software development lifecycle which is customer-centered and focused on continuous improvement of increasingly complex minimally viable products.
+
 ## References
