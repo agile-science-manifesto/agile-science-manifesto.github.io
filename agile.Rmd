@@ -4,6 +4,8 @@ author: "J. J. Merelo"
 date: "3/4/2021"
 output: html_document
 bibliography: agile.bib
+abstract:
+  Science has a data management problem, as well as a project management problem. While industry data science teams have embraced the *agile* mindset, and adopted or created all kind of tools to create reproducible workflows, academia-based science is still (mostly) mired in a mindset that's focused on a single final product (a paper), without focusing on incremental improvement and, over all, reproducibility. In this report we argue towards the adoption of the agile mindset and agile data science tool in academia, to make a more responsible, and over all, reproducible science.
 ---
 
 By *agile*, we usually imply a mindset that is applied to the whole software development lifecycle which is customer-centered and focused on continuous improvement of increasingly complex minimally viable products. The name comes from the Agile Manifesto [@beck2001manifesto], literally "Manifesto for agile software development". This manifesto has certainly changed the way software at large is developed, and become mainstream, spawning many different methodologies and best practice guidelines. It has proved to be an efficient way of carrying out all kind of projects, from small to large-scale ones, mitigating the presence of bugs and proving to be more efficient [@abrahamsson2017agile] than the methodology that prevailed previously (and still today in many sectors), generally called *waterfall* [@andrei2019study], which separated (or *siloed*) different teams doing from the specification to the testing, with every team acting at different parts of the lifecycle.
