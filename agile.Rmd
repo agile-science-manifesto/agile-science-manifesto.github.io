@@ -1,11 +1,20 @@
 ---
-title: 'Agile data science: a manifesto'
+title: 'Agile data science: a (draft) manifesto'
 author: "J. J. Merelo"
 date: "3/4/2021"
 output: html_document
 bibliography: agile.bib
 ---
 
-By *agile*, we usually imply a mindset that is applied to the whole software development lifecycle which is customer-centered and focused on continuous improvement of increasingly complex minimally viable products.
+By *agile*, we usually imply a mindset that is applied to the whole software development lifecycle which is customer-centered and focused on continuous improvement of increasingly complex minimally viable products. The name comes from the Agile Manifesto [@beck2001manifesto], literally "Manifesto for agile software development". This manifesto has certainly changed the way software at large is developed, and become mainstream, spawning many different methodologies and best practice guidelines. It has proved to be an efficient way of carrying out all kind of projects, from small to large-scale ones, mitigating the presence of bugs and proving to be more efficient [@abrahamsson2017agile] than the methodology that prevailed previously (and still today in many sectors), generally called *waterfall* [@andrei2019study], which separated (or *siloed*) different teams doing from the specification to the testing, with every team acting at different parts of the lifecycle.
+
+Despite being prevalent in software development (and, in general, project development) environments, it certainly has not reached science at large, which arguably follows a method that closely follows the waterfall methodology.
+
+Since data science and engineering has become an integral part of the workflow in many companies, *agile* data science is, mostly, the way it's done. Again, this is mostly because data science is mostly done in the industry, and not in academia, which does not have the same kind of workflows to deal with its own data.
+
+Our intention is to try and put science back in data science. We will try and examine critically how science is done, what are the main reasons why this agile mindset is not being used in science, how would *agile* concepts translate to science, and eventually what agile data science and science at large woudl look like.
+
+We will first present what attempts have been made to translate agile concepts to the (academic) world of science.
+
 
 ## References
