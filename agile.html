@@ -397,6 +397,31 @@ Science has a data management problem, as well as a project management problem. 
 <p>This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In <span class="citation">(Amatriain and Hornos 2009)</span>, which is essentially a presentation and not a formal paper, several proposal are made to apply agile “methods” in research; something that has been proposed repeatedly in later years, for instance in this blog post <span class="citation">(Carattino, n.d.)</span> and even in this paper <span class="citation">(Baijens, Helms, and Iren 2020)</span> which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced {} <span class="citation">(Amatriain 2008)</span> and even drafted an Agile Research Manifesto <span class="citation">(Amatriain 2009)</span>. This was almost totally forgotten until it was brought up two years ago in a blog called “Agile Science” <span class="citation">(Bergman 2018)</span>. Independently, some researchers proposed an (almost) ultimatum for Agile Research in <span class="citation">(Way, Chandrasekhar, and Murthy 2009)</span>, and eventually it became fruitful in a restricted environment, mHealth, in <span class="citation">(Wilson et al. 2018)</span>. This goes to show that it’s still part of the fringe, and has not been incorporated either to funding agencies guidelines, or to the common science and research practice.</p>
 <p>This is certainly related with Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science <span class="citation">(Robson et al. 2021)</span> has provided with new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management <span class="citation">(Rodríguez 2019)</span>, there are neither clear guidelines or best practices nor resources where scientific data management can be done at scale and, what’s more important, in a way that can have a (positive) outcome for your career.</p>
 </div>
+<div id="hypothesis-over-agile-science" class="section level2">
+<h2>Hypothesis over agile science</h2>
+<p>We certainly need to acknowledge first that science, the way it is now, has many problems. Many of them start and end with funding, but we should also realize that using XIX century formats to publish XXI century research leaves a lot to be desired. However, the fundamental problem is not in products, is in practitioner’s workflows themselves, and this ends in frustration and, when major crisis like COVID-19 strike, major problems carrying out much needed research that can be used as a foundation for the next, also necessary, step. So we will try to present, and defend, a series of hypothesis that would be the foundation of agile science, and that would contribute to solve the data management problem science currently has.</p>
+<div id="reproducibility-over-publishability" class="section level3">
+<h3>Reproducibility over publishability</h3>
+<p>Science arguably can’t be science if it’s not reproducible. However, there are many practical hurdles for it to be so. First, the “paper” format, even if it’s paper-with-embedded-links, is not reproducible <em>per se</em> (even if tools such as the one proposed by Kardas et al. <span class="citation">(Kardas et al. 2020)</span> are going to be able to extract at least the <em>results</em> in papers, not the code and experimental setup). Efforts like <em>Papers with Code</em> <span class="citation">(“Papers with Code,” n.d.)</span> help associate something that has been already published with its corresponding code, but even if this is a step forward reproducibility, a effort similar to the one invested in deploying applications to production should be made: configuration as code, provision of all needed services, inclusion of all data inflows, as well as extensive testing. Testing that is an essential part of the agile mindset, and is severely lacking in scientific workflows.</p>
+</div>
+<div id="testing-at-all-levels-over-proved-hypotheses" class="section level3">
+<h3>Testing at all levels over proved hypotheses</h3>
+<p>Essentially, all papers try to prove something, to answer a research question or to prove a hypothesis over data that is characterized in a certain way. Datasets are static, and hypotheses are proved over provided datasets, which are increasingly available, although that is not necessarily a given.</p>
+<p>Science practitioners know that working with raw data is always hard, and needs a series of steps to be suitable for use. Extracting the data is hard, checking that everything is correct is hard. Small changes could lead to invalidation of results.</p>
+<p>This is why testing is essential. “Code that’s not tested is broken”, we could say dataflows and workflows that are not tested are broken. Besides basic testing (testing for duplication, invalid data, things like that), we should formulate tests on data to check that it keeps being in the same format, range and general characteristics that allow our hypothesis to be valid. So agile science would need to test data to start with, before using it as input for workflows, but it should also unit-test all software used, perform integration tests on data + software, and eventually transform the hypothesis into actual software tests that would <em>continuously</em> check if the hypothesis still holds.</p>
+<p>Increasingly, and when the Internet itself, as well as myriad sensors and devices, is a continuous source of data, publishing a paper drawing conclusions over a small piece of data is valuable and helpful. Creating a tested, continuously deployed workflow that over and over again tests that hypothesis, and that has been released as free software to be integrated as input or middleware in other workflows is immensely more valuable. But needs another hypothesis</p>
+</div>
+<div id="open-over-closed" class="section level3">
+<h3>Open over closed</h3>
+<p>Science should be reproducible, and this implies that software used or produced for it should be open too. However, it makes sense to emphasize the pliability and flexibility of free-software-as-science. If you want to configure increasingly complicated workflows that are going to be deployed continuously, a single non-open component would break them and make them impossible.</p>
+<p>I would like to think this is the least controversial hypothesis that would support agile science. After all, it’s been repeatedly proved <span class="citation">(Vandewalle 2012)</span><span class="citation">(Vandewalle 2019)</span> that papers with code have a higher impact than those who hide it or simply don’t publish it alongside the paper itself. As a matter of fact, it’s quite usual right now in many scientific conferences to accompany the paper with pointers to a GitHub repo; searching over GitHub for similar code might also help scientists/coders as much as reading new papers. But there’s a more important aspect to this, which is that it leaves research open to all stakeholders, who can have a say in its outcomes, as well as in their direction. Which is why we prefer:</p>
+</div>
+<div id="stakeholder-collaboration-over-vertical-chains-of-command" class="section level3">
+<h3>Stakeholder collaboration over vertical chains-of-command</h3>
+<p>Again, it has been the Covid crisis the occasion where the world has realized that it needed science, it needed a lot and it needed it now. The whole world health and even lives were at stake, and government officials as well as the civil society needed to know from what to do to avoid contagion to the evolution of the pandemic and what it would mean vis-a-vis their return to a less restrictive situation.</p>
+<p>In this, many open data repositories emerged with partial, localized, solutions, that allowed people in general and maybe also government officials have a bit of more control over their lives.</p>
+</div>
+</div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
 <div id="refs" class="references">
@@ -427,11 +452,23 @@ Science has a data management problem, as well as a project management problem. 
 <div id="ref-carattino-agile-dev">
 <p>Carattino, Aquiles. n.d. “Agile Development for Science: Scientific Work Can Also Benefit from Principles Derived from Software Development.” <a href="https://www.uetke.com/blog/general/agile-development-for-science/">https://www.uetke.com/blog/general/agile-development-for-science/</a>.</p>
 </div>
+<div id="ref-kardas2020axcell">
+<p>Kardas, Marcin, Piotr Czapla, Pontus Stenetorp, Sebastian Ruder, Sebastian Riedel, Ross Taylor, and Robert Stojnic. 2020. “Axcell: Automatic Extraction of Results from Machine Learning Papers.” <em>arXiv Preprint arXiv:2004.14356</em>.</p>
+</div>
+<div id="ref-pwc">
+<p>“Papers with Code.” n.d. <a href="https://paperswithcode.com">https://paperswithcode.com</a>.</p>
+</div>
 <div id="ref-robson_opensci">
 <p>Robson, Samuel G, Myriam A Baum, Jennifer L Beaudry, Julia Beitner, Hilmar Brohmer, Jason Chin, Katarzyna Jasko, et al. 2021. “Nudging Open Science.” PsyArXiv. <a href="https://doi.org/10.31234/osf.io/zn7vt">https://doi.org/10.31234/osf.io/zn7vt</a>.</p>
 </div>
 <div id="ref-uberlyftothers">
 <p>Rodríguez, Jesús. 2019. “How LinkedIn, Uber, Lyft, Airbnb and Netflix are Solving Data Management and Discovery for Machine Learning Solutions.” <a href="https://www.kdnuggets.com/2019/08/linkedin-uber-lyft-airbnb-netflix-solving-data-management-discovery-machine-learning-solutions.html#disqus_thread">https://www.kdnuggets.com/2019/08/linkedin-uber-lyft-airbnb-netflix-solving-data-management-discovery-machine-learning-solutions.html#disqus_thread</a>.</p>
+</div>
+<div id="ref-vandewalle2012code">
+<p>Vandewalle, Patrick. 2012. “Code Sharing Is Associated with Research Impact in Image Processing.” <em>Computing in Science &amp; Engineering</em> 14 (4): 42–47.</p>
+</div>
+<div id="ref-vandewalle2019code">
+<p>———. 2019. “Code Availability for Image Processing Papers: A Status Update.” In <em>WIC Ieee Sp Symposium on Information Theory and Signal Processing in the Benelux, Date: 2019/05/28-2019/05/29, Location: Gent, Belgium</em>.</p>
 </div>
 <div id="ref-way2009agile">
 <p>Way, Thomas, Sandhya Chandrasekhar, and Arun Murthy. 2009. “The Agile Research Penultimatum.” In <em>Software Engineering Research and Practice</em>, 530–36. Citeseer.</p>
