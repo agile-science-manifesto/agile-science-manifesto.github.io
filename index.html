@@ -15,11 +15,42 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-			  <section><h1>Putting the science back in data science</h1>
-
-			    <aside class='notes'>The scientific method meets modern industrial development methodologies: we need to use agile methods for science, specially data science</aside>
+	    <div class="reveal">
+		<div class="slides">
+		    <section><h1>Putting the science back in data science</h1>
+                        
+			<aside class='notes'>The scientific method
+                            meets modern industrial development
+                            methodologies: we need to use agile
+                            methods for science, specially data
+                            science.
+                            It started with a (seemingly) simple
+                            problem: I wanted to fix a LaTeX error in
+                            an ArXiV paper (which allows you to submit
+                            new versions). Well, just edit it away and
+                            you're done.
+                            Or maybe not. The paper was written using
+                            Pweave. It allows you to mix Python code
+                            with LaTeX, including the data processing
+                            workflow into the paper itself. Great,
+                            right? Well, yes, but you need to install
+                            the Python toolchain to generate it.
+                            And this was not specified:
+                            `requirements.txt` was missing.
+                            Trial and error, you finally obtain all
+                            the tools (and I need to put them into the
+                            requirements.txt).
+                            But then the file was missing, and I
+                            needed to download it. And I didn't know
+                            where to find it... I needed to look it
+                            up... But then, I didn't have our own data
+                            file, and when I found one, I wasn't sure
+                            it was the last version...
+                            Long story short: I managed to do
+                            it. But if this has happened in a company,
+                            and this was a production application, I'd
+                            be fired. 
+                            </aside>
 			  </section>
 
 
