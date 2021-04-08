@@ -1,5 +1,5 @@
 ---
-title: 'Agile data science: a (draft) manifesto'
+title: 'Agile (data) science: a (draft) manifesto'
 author: "J. J. Merelo"
 date: "3/4/2021"
 output: html_document
@@ -18,5 +18,10 @@ Our intention is to try and put science back in data science. We will try and ex
 
 We will first present what attempts have been made to translate agile concepts to the (academic) world of science.
 
+## State of the art
+
+Despite being an age-old pursuit and probably, as such, ripe for disruption, science has been done in pretty much the same way for years. In very rough brushstrokes, it starts with application for funding, that includes a workplan, that generally works hierarchically from principal investigators to senior and then junior researchers, producing a series of artifacts which always include papers (which are snapshots of the state of the art), and in some cases software, protocols, or even, in some limited areas (mainly astronomy and medicine), workflows.
+
+This situation has been challenged repeatedly, lately.
 
 ## References
