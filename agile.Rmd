@@ -8,6 +8,8 @@ abstract:
   Science has a data management problem, as well as a project management problem. While industry data science teams have embraced the *agile* mindset, and adopted or created all kind of tools to create reproducible workflows, academia-based science is still (mostly) mired in a mindset that's focused on a single final product (a paper), without focusing on incremental improvement and, over all, reproducibility. In this report we argue towards the adoption of the agile mindset and agile data science tool in academia, to make a more responsible, and over all, reproducible science.
 ---
 
+## Introduction
+
 By *agile*, we usually imply a mindset that is applied to the whole software development lifecycle which is customer-centered and focused on continuous improvement of increasingly complex minimally viable products. The name comes from the Agile Manifesto [@beck2001manifesto], literally "Manifesto for agile software development". This manifesto has certainly changed the way software at large is developed, and become mainstream, spawning many different methodologies and best practice guidelines. It has proved to be an efficient way of carrying out all kind of projects, from small to large-scale ones, mitigating the presence of bugs and proving to be more efficient [@abrahamsson2017agile] than the methodology that prevailed previously (and still today in many sectors), generally called *waterfall* [@andrei2019study], which separated (or *siloed*) different teams doing from the specification to the testing, with every team acting at different parts of the lifecycle.
 
 Despite being prevalent in software development (and, in general, project development) environments, it certainly has not reached science at large, which arguably follows a method that closely follows the waterfall methodology.
@@ -22,6 +24,8 @@ We will first present what attempts have been made to translate agile concepts t
 
 Despite being an age-old pursuit and probably, as such, ripe for disruption, science has been done in pretty much the same way for years. In very rough brushstrokes, it starts with application for funding, that includes a workplan, that generally works hierarchically from principal investigators to senior and then junior researchers, producing a series of artifacts which always include papers (which are snapshots of the state of the art), and in some cases software, protocols, or even, in some limited areas (mainly astronomy and medicine), workflows.
 
-This situation has been challenged repeatedly, lately.
+This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In [@agile-science], which is essentially a presentation and not a formal paper, several proposal are made to apply agile "methods" in research; something that has been proposed repeatedly in later years, for instance in this blog post [@carattino-agile-dev] and even in this paper [@9140255] which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects.
+
+This is certainly related with Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science [@robson_opensci] has provided with new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow.
 
 ## References
