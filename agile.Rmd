@@ -103,9 +103,11 @@ In many cases, and specially in data science/machine learning, there will specia
 
 This also decouples the production of a workflow from its actual deployment. As long as deployment is clearly expressed, it can be deployed by the scientific team producing it on premises or on the cloud, or done by anyone else elsewhere. One could even think about global free infrastructure for doing this kind of thing, or even a model similar to pay-to-publish: pay-to-deploy, and let the hosting place take care of long-term maintenance. This also makes science and the scientific effort, much more sustainable, and satisfies stakeholders (fourth hypothesis above) by keeping the product of science funding available and working way beyond the mere existence of the grant, or even the group itself.
 
-
-
 ## Conclusions
+
+In this report we have tried to propose a set of best practices that we think would benefit science at large, but especially those disciplines that rely heavily in data and software to produce results. Essentially, it interprets, translates and codifies the agile (software development) manifesto to the scientific arena, converting what this manifesto values in a series of 4 hypotheses that will guide agile science.
+
+Hypotheses need to be proved, however, and science prides itself in being able to establish *fact* over anecdotal, or even counter-intuitive, evidence. This is why we also provide a *path forward* in the shape of several best practices suggestions that will help prove those hypotheses beyond any doubt. There is strong evidence that supports them, and our own experience using it for some time via open-repository product development, specially in papers such as [@garciaortega2021tropes] and, in general, most papers that we have published lately, helps stakeholder participation in the production of workflows, makes easier to evolve software related to science and streamline product development, and makes also easier to respond to new requirements. Proving the positive effects of these *preferences* is, however, left as future work.
 
 
 ## References
