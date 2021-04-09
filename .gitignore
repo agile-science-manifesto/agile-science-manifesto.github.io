@@ -13,3 +13,4 @@ dist/*.map
 *~
 .Rhistory
 auto/
+*.pdf
