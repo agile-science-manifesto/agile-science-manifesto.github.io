@@ -28,13 +28,15 @@ This situation has been challenged repeatedly, lately, mainly after the introduc
 
 This is certainly related with Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science [@robson_opensci] has provided with new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management [@uberlyftothers], there are neither clear guidelines or best practices nor resources where scientific data management can be done at scale and, what's more important, in a way that can have a (positive) outcome for your career.
 
-## Hypothesis over agile science
+## Hypothesis on agile science
 
 We certainly need to acknowledge first that science, the way it is now, has many problems. Many of them start and end with funding, but we should also realize that using XIX century formats to publish XXI century research leaves a lot to be desired. However, the fundamental problem is not in products, is in practitioner's workflows themselves, and this ends in frustration and, when major crisis like COVID-19 strike, major problems carrying out much needed research that can be used as a foundation for the next, also necessary, step. So we will try to present, and defend, a series of hypothesis that would be the foundation of agile science, and that would contribute to solve the data management problem science currently has.
 
 ### Reproducibility over publishability
 
 Science arguably can't be science if it's not reproducible. However, there are many practical hurdles for it to be so. First, the "paper" format, even if it's paper-with-embedded-links, is not reproducible *per se* (even if tools such as the one proposed by Kardas et al. [@kardas2020axcell] are going to be able to extract at least the *results* in papers, not the code and experimental setup). Efforts like *Papers with Code* [@pwc] help associate something that has been already published with its corresponding code, but even if this is a step forward reproducibility, a effort similar to the one invested in deploying applications to production should be made: configuration as code, provision of all needed services, inclusion of all data inflows, as well as extensive testing. Testing that is an essential part of the agile mindset, and is severely lacking in scientific workflows.
+
+<!-- from this follows deploy *and* publish -->
 
 ### Testing at all levels over proved hypotheses
 
@@ -54,8 +56,19 @@ I would like to think this is the least controversial hypothesis that would supp
 
 ### Stakeholder collaboration over vertical chains-of-command
 
-Again, it has been the Covid crisis the occasion where the world has realized that it needed science, it needed a lot and it needed it now. The whole world health and even lives were at stake, and government officials as well as the civil society needed to know from what to do to avoid contagion to the evolution of the pandemic and what it would mean  vis-a-vis their return to a less restrictive situation.
+Again, it has been the Covid crisis the occasion where the world has realized that it needed science, it needed a lot and it needed it now. The whole world health and even lives were at stake, and government officials as well as the civil society needed to know from what to do to avoid contagion to the evolution of the pandemic and what it would mean  vis-à-vis their return to a less restrictive situation.
 
 In this, many open data repositories emerged with partial, localized, solutions, that allowed people in general and maybe also government officials have a bit of more control over their lives.
+
+As a matter of fact, the scientific chain on command and general career environment causes not a few problems in participants [@Levecque2017WorkOA] . This study mentions explicitly "the supervisor's leadership style" as one of the factors that are linked to health problems, with the general work and organizational context cited as one of the highlights of the study. The scenario shown in a recent Nature survey [@woolston2019phds] would be unsustainable in any kind of company, be it software development or any other kind of company. Agile software development offers a series of principles and best practices that enable a sustainable pace of development, with regular deployments; but since it values "individuals and interactions over processes and tools" it also creates an humane, self-organizing work environment that results in better worker satisfaction, as well as sustainable, career-long learning. That should also be an objective in scientific research.
+
+## The way forward
+
+Agile fixed software development by proposing a series of principles attached to the Agile manifesto [@beck2001manifesto] that eventually spawned a series of tools on one hand, and best practices in other hand. Tools that can be grouped into generic CI and CD toolchains, including MLOps tools [@makinen2021needs] , team work tools (usually attached to source repositories) such as Jira or GitHub itself and the use of different methodologies (Kanban, Scrum), practices (reviews, retros) and roles (product owner, stakeholder)
+to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment.
+
+Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We'll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science.
+## Conclusions
+
 
 ## References

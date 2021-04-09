@@ -397,12 +397,13 @@ Science has a data management problem, as well as a project management problem. 
 <p>This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In <span class="citation">(Amatriain and Hornos 2009)</span>, which is essentially a presentation and not a formal paper, several proposal are made to apply agile “methods” in research; something that has been proposed repeatedly in later years, for instance in this blog post <span class="citation">(Carattino, n.d.)</span> and even in this paper <span class="citation">(Baijens, Helms, and Iren 2020)</span> which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced {} <span class="citation">(Amatriain 2008)</span> and even drafted an Agile Research Manifesto <span class="citation">(Amatriain 2009)</span>. This was almost totally forgotten until it was brought up two years ago in a blog called “Agile Science” <span class="citation">(Bergman 2018)</span>. Independently, some researchers proposed an (almost) ultimatum for Agile Research in <span class="citation">(Way, Chandrasekhar, and Murthy 2009)</span>, and eventually it became fruitful in a restricted environment, mHealth, in <span class="citation">(Wilson et al. 2018)</span>. This goes to show that it’s still part of the fringe, and has not been incorporated either to funding agencies guidelines, or to the common science and research practice.</p>
 <p>This is certainly related with Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science <span class="citation">(Robson et al. 2021)</span> has provided with new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management <span class="citation">(Rodríguez 2019)</span>, there are neither clear guidelines or best practices nor resources where scientific data management can be done at scale and, what’s more important, in a way that can have a (positive) outcome for your career.</p>
 </div>
-<div id="hypothesis-over-agile-science" class="section level2">
-<h2>Hypothesis over agile science</h2>
+<div id="hypothesis-on-agile-science" class="section level2">
+<h2>Hypothesis on agile science</h2>
 <p>We certainly need to acknowledge first that science, the way it is now, has many problems. Many of them start and end with funding, but we should also realize that using XIX century formats to publish XXI century research leaves a lot to be desired. However, the fundamental problem is not in products, is in practitioner’s workflows themselves, and this ends in frustration and, when major crisis like COVID-19 strike, major problems carrying out much needed research that can be used as a foundation for the next, also necessary, step. So we will try to present, and defend, a series of hypothesis that would be the foundation of agile science, and that would contribute to solve the data management problem science currently has.</p>
 <div id="reproducibility-over-publishability" class="section level3">
 <h3>Reproducibility over publishability</h3>
 <p>Science arguably can’t be science if it’s not reproducible. However, there are many practical hurdles for it to be so. First, the “paper” format, even if it’s paper-with-embedded-links, is not reproducible <em>per se</em> (even if tools such as the one proposed by Kardas et al. <span class="citation">(Kardas et al. 2020)</span> are going to be able to extract at least the <em>results</em> in papers, not the code and experimental setup). Efforts like <em>Papers with Code</em> <span class="citation">(“Papers with Code,” n.d.)</span> help associate something that has been already published with its corresponding code, but even if this is a step forward reproducibility, a effort similar to the one invested in deploying applications to production should be made: configuration as code, provision of all needed services, inclusion of all data inflows, as well as extensive testing. Testing that is an essential part of the agile mindset, and is severely lacking in scientific workflows.</p>
+<!-- from this follows deploy *and* publish -->
 </div>
 <div id="testing-at-all-levels-over-proved-hypotheses" class="section level3">
 <h3>Testing at all levels over proved hypotheses</h3>
@@ -418,9 +419,15 @@ Science has a data management problem, as well as a project management problem. 
 </div>
 <div id="stakeholder-collaboration-over-vertical-chains-of-command" class="section level3">
 <h3>Stakeholder collaboration over vertical chains-of-command</h3>
-<p>Again, it has been the Covid crisis the occasion where the world has realized that it needed science, it needed a lot and it needed it now. The whole world health and even lives were at stake, and government officials as well as the civil society needed to know from what to do to avoid contagion to the evolution of the pandemic and what it would mean vis-a-vis their return to a less restrictive situation.</p>
+<p>Again, it has been the Covid crisis the occasion where the world has realized that it needed science, it needed a lot and it needed it now. The whole world health and even lives were at stake, and government officials as well as the civil society needed to know from what to do to avoid contagion to the evolution of the pandemic and what it would mean vis-à-vis their return to a less restrictive situation.</p>
 <p>In this, many open data repositories emerged with partial, localized, solutions, that allowed people in general and maybe also government officials have a bit of more control over their lives.</p>
+<p>As a matter of fact, the scientific chain on command and general career environment causes not a few problems in participants <span class="citation">(Levecque et al. 2017)</span> . This study mentions explicitly “the supervisor’s leadership style” as one of the factors that are linked to health problems, with the general work and organizational context cited as one of the highlights of the study. The scenario shown in a recent Nature survey <span class="citation">(Woolston 2019)</span> would be unsustainable in any kind of company, be it software development or any other kind of company. Agile software development offers a series of principles and best practices that enable a sustainable pace of development, with regular deployments; but since it values “individuals and interactions over processes and tools” it also creates an humane, self-organizing work environment that results in better worker satisfaction, as well as sustainable, career-long learning. That should also be an objective in scientific research.</p>
 </div>
+</div>
+<div id="the-way-forward" class="section level2">
+<h2>The way forward</h2>
+<p>Agile fixed software development by proposing a series of principles attached to the Agile manifesto <span class="citation">(Beck et al. 2001)</span> that eventually spawned a series of tools on one hand, and best practices in other hand. Tools that can be grouped into generic CI and CD toolchains, including MLOps tools <span class="citation">(Mäkinen et al. 2021)</span> , team work tools (usually attached to source repositories) such as Jira or GitHub itself and the use of different methodologies (Kanban, Scrum), practices (reviews, retros) and roles (product owner, stakeholder) to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment.</p>
+<p>Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We’ll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science. ## Conclusions</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
@@ -455,6 +462,12 @@ Science has a data management problem, as well as a project management problem. 
 <div id="ref-kardas2020axcell">
 <p>Kardas, Marcin, Piotr Czapla, Pontus Stenetorp, Sebastian Ruder, Sebastian Riedel, Ross Taylor, and Robert Stojnic. 2020. “Axcell: Automatic Extraction of Results from Machine Learning Papers.” <em>arXiv Preprint arXiv:2004.14356</em>.</p>
 </div>
+<div id="ref-Levecque2017WorkOA">
+<p>Levecque, K., F. Anseel, A. D. Beuckelaer, J. Heyden, and L. Gisle. 2017. “Work Organization and Mental Health Problems in Phd Students.” <em>Research Policy</em> 46: 868–79.</p>
+</div>
+<div id="ref-makinen2021needs">
+<p>Mäkinen, Sasu, Henrik Skogström, Eero Laaksonen, and Tommi Mikkonen. 2021. “Who Needs Mlops: What Data Scientists Seek to Accomplish and How Can Mlops Help?” <em>arXiv Preprint arXiv:2103.08942</em>.</p>
+</div>
 <div id="ref-pwc">
 <p>“Papers with Code.” n.d. <a href="https://paperswithcode.com">https://paperswithcode.com</a>.</p>
 </div>
@@ -475,6 +488,9 @@ Science has a data management problem, as well as a project management problem. 
 </div>
 <div id="ref-wilson2018agile">
 <p>Wilson, Kumanan, Cameron Bell, Lindsay Wilson, and Holly Witteman. 2018. “Agile Research to Complement Agile Development: A Proposal for an mHealth Research Lifecycle.” <em>NPJ Digital Medicine</em> 1 (1): 1–6.</p>
+</div>
+<div id="ref-woolston2019phds">
+<p>Woolston, Chris. 2019. “PhDs: The Tortuous Truth.” <em>Nature</em> 575 (7782): 403–7.</p>
 </div>
 </div>
 </div>
