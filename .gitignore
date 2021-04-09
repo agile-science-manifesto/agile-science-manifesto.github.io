@@ -14,3 +14,4 @@ dist/*.map
 .Rhistory
 auto/
 *.pdf
+*.log

@@ -77,7 +77,7 @@ Techniques such as Scrum [@9140255] have helped in data science (and this, only 
 ## The way forward
 
 Agile fixed software development by proposing a series of principles attached to the Agile manifesto [@beck2001manifesto] that eventually spawned a series of tools on one hand, and best practices in other hand. Tools that can be grouped into generic CI and CD toolchains, including MLOps tools [@makinen2021needs] , team work tools (usually attached to source repositories) such as Jira or GitHub itself and the use of different methodologies (Kanban, Scrum), practices (reviews, retros) and roles (product owner, stakeholder)
-to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment.
+to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment. I have been advocating for using these techniques for quite a long time, at least since 2011 (last version of the talk on "the art of evolutionary algorithm programming is here [@merelo13]). In this report I try to put everything together under the same framework which we will be calling agile science.
 
 Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We'll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science.
 
@@ -87,7 +87,15 @@ We need to shift focus from publishing on paper as a one shot to deploying worki
 
 As we see this shift in action, we will see how the science system changes to accommodate this and take it into account in a scientific career. At this point in time, the peer-review and article-publishing system has been gamed in so many ways \cite{arneyBroken}, that it's almost meaningless to rely on it for scientific promotion, not to mention science itself. To a certain point, it's become an obstacle to science. But replicability can fix it [@moonesinghe2007most], and the best way to totally replicate results is to publish them openly (third hypothesis above).
 
-### The product owner is the team producign it
+### The product owner would be person with the original idea
+
+The 4th hypothesis above advocates for stakeholder participation over hierarchical decision-making. However, in agile teams there must be a person that will be *calling the shots*. A successful product owner should be able to [@oomen2017can] to "define the product vision". Since in this case the *product* is a scientific workflow, the person that had the original idea should be the one that *owns* the product, and should them prioritize different paths of development, define minimally viable products and its consequent milestones, and in general, take not only responsibility for the finished product but also work with the team to achieve success. 
+
+That sense of ownership will one of the factors decreasing anxiety and increasing sustainable productivity in science. It dodges hierarchical organization by making the principal investigator product owner only if he or she, effectively, has had the original idea and the vision of taking it forward. At the same time, a product owner is part of an agile team, and *owns* the product, not the team. This small semantic change also simplifies roles and clarifies what everyone will be doing in the product development lifecycle.
+
+### Use common software development tools and practices
+
+
 
 
 
