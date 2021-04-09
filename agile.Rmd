@@ -80,6 +80,17 @@ Agile fixed software development by proposing a series of principles attached to
 to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment.
 
 Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We'll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science.
+
+### The product needs to be a deployed workflow
+
+We need to shift focus from publishing on paper as a one shot to deploying working workflows, which will have as side products papers that can be continuously updated or else simply remain as a snapshot of the state of the art in a particular point in time, but that can, anyway, be re-produced (see one of the hypothesis above, reproducibility above all else) by anyone, but specially the people that have produced it first.
+
+As we see this shift in action, we will see how the science system changes to accommodate this and take it into account in a scientific career. At this point in time, the peer-review and article-publishing system has been gamed in so many ways \cite{arneyBroken}, that it's almost meaningless to rely on it for scientific promotion, not to mention science itself. To a certain point, it's become an obstacle to science. But replicability can fix it [@moonesinghe2007most], and the best way to totally replicate results is to publish them openly (third hypothesis above).
+
+### The product owner is the team producign it
+
+
+
 ## Conclusions
 
 
