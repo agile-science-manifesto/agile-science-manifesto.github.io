@@ -3,8 +3,8 @@ title: 'Agile (data) science: a (draft) manifesto'
 author: "J. J. Merelo"
 date: "3/4/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 bibliography: agile.bib
 abstract: Science has a data management problem, as well as a project management problem.
   While industry data science teams have embraced the *agile* mindset, and adopted
@@ -85,7 +85,9 @@ Science should not be different, and a (roughly) direct translation of all these
 
 We need to shift focus from publishing on paper as a one shot to deploying working workflows, which will have as side products papers that can be continuously updated or else simply remain as a snapshot of the state of the art in a particular point in time, but that can, anyway, be re-produced (see one of the hypothesis above, reproducibility above all else) by anyone, but specially the people that have produced it first.
 
-As we see this shift in action, we will see how the science system changes to accommodate this and take it into account in a scientific career. At this point in time, the peer-review and article-publishing system has been gamed in so many ways \cite{arneyBroken}, that it's almost meaningless to rely on it for scientific promotion, not to mention science itself. To a certain point, it's become an obstacle to science. But replicability can fix it [@moonesinghe2007most], and the best way to totally replicate results is to publish them openly (third hypothesis above).
+As we see this shift in action, we will see how the science system changes to accommodate this and take it into account in a scientific career. At this point in time, the peer-review and article-publishing system has been gamed in so many ways [@arneybroken], that it's almost meaningless to rely on it for scientific promotion, not to mention science itself. To a certain point, it's become an obstacle to science. But replicability can fix it [@moonesinghe2007most], and the best way to totally replicate results is to publish them openly (third hypothesis above).
+
+There are clearly lots of hurdles to overcome in this, including the fact that scientific publishing powerhouses will have to become workflow hosting players. That, however, is an externality to this proposal and can no doubt be solved as soon as the economic scenario draws itself.
 
 ### The product owner would be person with the original idea
 
@@ -95,7 +97,11 @@ That sense of ownership will one of the factors decreasing anxiety and increasin
 
 ### Use common software development tools and practices
 
+Most scientific development includes, or even is just simply, software development. We should use common software development tools and best practices, and integrate them into the development of the scientific workflow that is ultimately the objective.
 
+In many cases, and specially in data science/machine learning, there will specialized tools such as MLflow [@zaharia2018accelerating] with frontends such as Snapper ML [@Molner_Domenech_2020] to simplify the creation of workflows. No doubt these workflow high-level tools will be extended to other fields, and integrated with mainstream deployment tools such as Docker or Kubernetes. Integrating these practices seamlessly merges product (workflow) development with software development, and also leverages existing tools such as GitHub or GitLab with their accompanying workflow design tools (Github Actions, pipelines), as well as other cloud environments with their accompanying tools.
+
+This also decouples the production of a workflow from its actual deployment. As long as deployment is clearly expressed, it can be deployed by the scientific team producing it on premises or on the cloud, or done by anyone else elsewhere. One could even think about global free infrastructure for doing this kind of thing, or even a model similar to pay-to-publish: pay-to-deploy, and let the hosting place take care of long-term maintenance. This also makes science and the scientific effort, much more sustainable, and satisfies stakeholders (fourth hypothesis above) by keeping the product of science funding available and working way beyond the mere existence of the grant, or even the group itself.
 
 
 

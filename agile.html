@@ -394,7 +394,7 @@ Science has a data management problem, as well as a project management problem. 
 <div id="state-of-the-art" class="section level2">
 <h2>State of the art</h2>
 <p>Despite being an age-old pursuit and probably, as such, ripe for disruption, science has been done in pretty much the same way for years. In very rough brushstrokes, it starts with application for funding, that includes a workplan, that generally works hierarchically from principal investigators to senior and then junior researchers, producing a series of artifacts which always include papers (which are snapshots of the state of the art), and in some cases software, protocols, or even, in some limited areas (mainly astronomy and medicine), workflows.</p>
-<p>This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In <span class="citation">(Amatriain and Hornos 2009)</span>, which is essentially a presentation and not a formal paper, several proposal are made to apply agile “methods” in research; something that has been proposed repeatedly in later years, for instance in this blog post <span class="citation">(Carattino, n.d.)</span> and even in this paper <span class="citation">(Baijens, Helms, and Iren 2020)</span> which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced {} <span class="citation">(Amatriain 2008)</span> and even drafted an Agile Research Manifesto <span class="citation">(Amatriain 2009)</span>. This was almost totally forgotten until it was brought up two years ago in a blog called “Agile Science” <span class="citation">(Bergman 2018)</span>. Independently, some researchers proposed an (almost) ultimatum for Agile Research in <span class="citation">(Way, Chandrasekhar, and Murthy 2009)</span>, and eventually it became fruitful in a restricted environment, mHealth, in <span class="citation">(Wilson et al. 2018)</span>. This goes to show that it’s still part of the fringe, and has not been incorporated either to funding agencies guidelines, or to the common science and research practice.</p>
+<p>This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In <span class="citation">(Amatriain and Hornos 2009)</span>, which is essentially a presentation and not a formal paper, several proposal are made to apply agile “methods” in research; something that has been proposed repeatedly in later years, for instance in this blog post <span class="citation">(Carattino, n.d.)</span> and even in this paper <span class="citation">(Baijens, Helms, and Iren 2020)</span> which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced <em>agile research</em> <span class="citation">(Amatriain 2008)</span> and even drafted an Agile Research Manifesto <span class="citation">(Amatriain 2009)</span>. This was almost totally forgotten until it was brought up two years ago in a blog called “Agile Science” <span class="citation">(Bergman 2018)</span>. Independently, some researchers proposed an (almost) ultimatum for Agile Research in <span class="citation">(Way, Chandrasekhar, and Murthy 2009)</span>, and eventually it became fruitful in a restricted environment, mHealth, in <span class="citation">(Wilson et al. 2018)</span>. This goes to show that it’s still part of the fringe, and has not been incorporated either to funding agencies guidelines, or to the common science and research practice.</p>
 <p>This is certainly related with Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science <span class="citation">(Robson et al. 2021)</span> has provided with new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management <span class="citation">(Rodríguez 2019)</span>, there are neither clear guidelines or best practices nor resources where scientific data management can be done at scale and, what’s more important, in a way that can have a (positive) outcome for your career.</p>
 </div>
 <div id="hypothesis-on-agile-science" class="section level2">
@@ -428,8 +428,28 @@ Science has a data management problem, as well as a project management problem. 
 </div>
 <div id="the-way-forward" class="section level2">
 <h2>The way forward</h2>
-<p>Agile fixed software development by proposing a series of principles attached to the Agile manifesto <span class="citation">(Beck et al. 2001)</span> that eventually spawned a series of tools on one hand, and best practices in other hand. Tools that can be grouped into generic CI and CD toolchains, including MLOps tools <span class="citation">(Mäkinen et al. 2021)</span> , team work tools (usually attached to source repositories) such as Jira or GitHub itself and the use of different methodologies (Kanban, Scrum), practices (reviews, retros) and roles (product owner, stakeholder) to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment.</p>
-<p>Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We’ll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science. ## Conclusions</p>
+<p>Agile fixed software development by proposing a series of principles attached to the Agile manifesto <span class="citation">(Beck et al. 2001)</span> that eventually spawned a series of tools on one hand, and best practices in other hand. Tools that can be grouped into generic CI and CD toolchains, including MLOps tools <span class="citation">(Mäkinen et al. 2021)</span> , team work tools (usually attached to source repositories) such as Jira or GitHub itself and the use of different methodologies (Kanban, Scrum), practices (reviews, retros) and roles (product owner, stakeholder) to streamline software production, bring value to stakeholders, and provide a sane, stable nurturing and eventually productive working environment. I have been advocating for using these techniques for quite a long time, at least since 2011 (last version of the talk on &quot;the art of evolutionary algorithm programming is here <span class="citation">(Merelo 2013)</span>). In this report I try to put everything together under the same framework which we will be calling agile science.</p>
+<p>Science should not be different, and a (roughly) direct translation of all these practices, however they are interpreted, would be beneficial. We’ll try, anyway, to delve a bit further into those concepts to see how they translate and how they could be applied, in practice, to science.</p>
+<div id="the-product-needs-to-be-a-deployed-workflow" class="section level3">
+<h3>The product needs to be a deployed workflow</h3>
+<p>We need to shift focus from publishing on paper as a one shot to deploying working workflows, which will have as side products papers that can be continuously updated or else simply remain as a snapshot of the state of the art in a particular point in time, but that can, anyway, be re-produced (see one of the hypothesis above, reproducibility above all else) by anyone, but specially the people that have produced it first.</p>
+<p>As we see this shift in action, we will see how the science system changes to accommodate this and take it into account in a scientific career. At this point in time, the peer-review and article-publishing system has been gamed in so many ways <span class="citation">(Arney, n.d.)</span>, that it’s almost meaningless to rely on it for scientific promotion, not to mention science itself. To a certain point, it’s become an obstacle to science. But replicability can fix it <span class="citation">(Moonesinghe, Khoury, and Janssens 2007)</span>, and the best way to totally replicate results is to publish them openly (third hypothesis above).</p>
+<p>There are clearly lots of hurdles to overcome in this, including the fact that scientific publishing powerhouses will have to become workflow hosting players. That, however, is an externality to this proposal and can no doubt be solved as soon as the economic scenario draws itself.</p>
+</div>
+<div id="the-product-owner-would-be-person-with-the-original-idea" class="section level3">
+<h3>The product owner would be person with the original idea</h3>
+<p>The 4th hypothesis above advocates for stakeholder participation over hierarchical decision-making. However, in agile teams there must be a person that will be <em>calling the shots</em>. A successful product owner should be able to <span class="citation">(Oomen et al. 2017)</span> to “define the product vision”. Since in this case the <em>product</em> is a scientific workflow, the person that had the original idea should be the one that <em>owns</em> the product, and should them prioritize different paths of development, define minimally viable products and its consequent milestones, and in general, take not only responsibility for the finished product but also work with the team to achieve success.</p>
+<p>That sense of ownership will one of the factors decreasing anxiety and increasing sustainable productivity in science. It dodges hierarchical organization by making the principal investigator product owner only if he or she, effectively, has had the original idea and the vision of taking it forward. At the same time, a product owner is part of an agile team, and <em>owns</em> the product, not the team. This small semantic change also simplifies roles and clarifies what everyone will be doing in the product development lifecycle.</p>
+</div>
+<div id="use-common-software-development-tools-and-practices" class="section level3">
+<h3>Use common software development tools and practices</h3>
+<p>Most scientific development includes, or even is just simply, software development. We should use common software development tools and best practices, and integrate them into the development of the scientific workflow that is ultimately the objective.</p>
+<p>In many cases, and specially in data science/machine learning, there will specialized tools such as MLflow <span class="citation">(Zaharia et al. 2018)</span> with frontends such as Snapper ML <span class="citation">(Domenech and Guillén 2020)</span> to simplify the creation of workflows. No doubt these workflow high-level tools will be extended to other fields, and integrated with mainstream deployment tools such as Docker or Kubernetes. Integrating these practices seamlessly merges product (workflow) development with software development, and also leverages existing tools such as GitHub or GitLab with their accompanying workflow design tools (Github Actions, pipelines), as well as other cloud environments with their accompanying tools.</p>
+<p>This also decouples the production of a workflow from its actual deployment. As long as deployment is clearly expressed, it can be deployed by the scientific team producing it on premises or on the cloud, or done by anyone else elsewhere. One could even think about global free infrastructure for doing this kind of thing, or even a model similar to pay-to-publish: pay-to-deploy, and let the hosting place take care of long-term maintenance. This also makes science and the scientific effort, much more sustainable, and satisfies stakeholders (fourth hypothesis above) by keeping the product of science funding available and working way beyond the mere existence of the grant, or even the group itself.</p>
+</div>
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
@@ -449,6 +469,9 @@ Science has a data management problem, as well as a project management problem. 
 <div id="ref-andrei2019study">
 <p>Andrei, Bogdan-Alexandru, Andrei-Cosmin Casu-Pop, Sorin-Catalin Gheorghe, and Costin-Anton Boiangiu. 2019. “A Study on Using Waterfall and Agile Methods in Software Project Management.” <em>Journal of Information Systems &amp; Operations Management</em>, 125–35.</p>
 </div>
+<div id="ref-arneybroken">
+<p>Arney, Kat. n.d. “Science Is Broken. Here’s How to Fix It.” <a href="http://littleatoms.com/science/science-broken-heres-how-fix-it">http://littleatoms.com/science/science-broken-heres-how-fix-it</a>.</p>
+</div>
 <div id="ref-9140255">
 <p>Baijens, J., R. Helms, and D. Iren. 2020. “Applying Scrum in Data Science Projects.” In <em>2020 Ieee 22nd Conference on Business Informatics (Cbi)</em>, 1:30–38. <a href="https://doi.org/10.1109/CBI49978.2020.00011">https://doi.org/10.1109/CBI49978.2020.00011</a>.</p>
 </div>
@@ -461,6 +484,9 @@ Science has a data management problem, as well as a project management problem. 
 <div id="ref-carattino-agile-dev">
 <p>Carattino, Aquiles. n.d. “Agile Development for Science: Scientific Work Can Also Benefit from Principles Derived from Software Development.” <a href="https://www.uetke.com/blog/general/agile-development-for-science/">https://www.uetke.com/blog/general/agile-development-for-science/</a>.</p>
 </div>
+<div id="ref-Molner_Domenech_2020">
+<p>Domenech, Antonio Molner, and Alberto Guillén. 2020. “Ml-Experiment: A Python Framework for Reproducible Data Science.” <em>Journal of Physics: Conference Series</em> 1603 (September): 012025. <a href="https://doi.org/10.1088/1742-6596/1603/1/012025">https://doi.org/10.1088/1742-6596/1603/1/012025</a>.</p>
+</div>
 <div id="ref-gibney2020ai">
 <p>Gibney, Elizabeth. 2020. “This Ai Researcher Is Trying to Ward Off a Reproducibility Crisis.” <em>Nature</em> 577 (7788): 14.</p>
 </div>
@@ -472,6 +498,15 @@ Science has a data management problem, as well as a project management problem. 
 </div>
 <div id="ref-makinen2021needs">
 <p>Mäkinen, Sasu, Henrik Skogström, Eero Laaksonen, and Tommi Mikkonen. 2021. “Who Needs Mlops: What Data Scientists Seek to Accomplish and How Can Mlops Help?” <em>arXiv Preprint arXiv:2103.08942</em>.</p>
+</div>
+<div id="ref-merelo13">
+<p>Merelo, JJ. 2013. “The Art of Evolutionary Algorithm Programming.” <a href="https://issuu.com/jjmerelo/docs/art-ecp-cec13">https://issuu.com/jjmerelo/docs/art-ecp-cec13</a>.</p>
+</div>
+<div id="ref-moonesinghe2007most">
+<p>Moonesinghe, Ramal, Muin J Khoury, and A Cecile JW Janssens. 2007. “Most Published Research Findings Are False—but a Little Replication Goes a Long Way.” <em>PLoS Med</em> 4 (2): e28.</p>
+</div>
+<div id="ref-oomen2017can">
+<p>Oomen, Sandra, Benny De Waal, Ademar Albertin, and Pascal Ravesteyn. 2017. “How Can Scrum Be Succesful? Competences of the Scrum Product Owner.”</p>
 </div>
 <div id="ref-pwc">
 <p>“Papers with Code.” n.d. <a href="https://paperswithcode.com">https://paperswithcode.com</a>.</p>
@@ -499,6 +534,9 @@ Science has a data management problem, as well as a project management problem. 
 </div>
 <div id="ref-woolston2019phds">
 <p>Woolston, Chris. 2019. “PhDs: The Tortuous Truth.” <em>Nature</em> 575 (7782): 403–7.</p>
+</div>
+<div id="ref-zaharia2018accelerating">
+<p>Zaharia, Matei, Andrew Chen, Aaron Davidson, Ali Ghodsi, Sue Ann Hong, Andy Konwinski, Siddharth Murching, et al. 2018. “Accelerating the Machine Learning Lifecycle with Mlflow.” <em>IEEE Data Eng. Bull.</em> 41 (4): 39–45.</p>
 </div>
 </div>
 </div>
