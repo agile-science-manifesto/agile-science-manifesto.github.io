@@ -500,6 +500,34 @@ def build_paper_latex_arxiv(context):
     run(command, hide=False, warn=True)</code></pre>
                                 </section>
 
+                                <section><h1>Using
+                                    knitr/pweave/rmarkdown</h1>
+                                    <pre><code data-line-numbers="1-3,11-13|4,10|5-9">We would need to find out first if this method really works....
+%
+\begin{figure}
+&lt;&lt;generations.fs.table,echo=FALSE, results="asis">>=
+library(ggplot2)
+library(ggthemes)
+
+generations <- read.csv("data/ng-spambase1-generations.csv")
+ggplot(generations,aes(x=Generation,y=Average.F2,group=Generation,color="Average F2"))+geom_boxplot()+geom_boxplot(aes(x=Generation,y=Max.F2,group=Generation, color="Max F2", fill="Max F2"))+theme_tufte()
+@
+\caption{Boxplot of the best F2 (filled) and average F2 (clear, transparent) over 15 different runs for the spambase1 dataset partition.}
+\label{fig:gen:f2}
+\end{figure}</code></pre>
+                                    <aside class="notes">This makes
+                                        producing figures for the
+                                        presentation extremely easy,
+                                        or making any changes that are
+                                        needed by reviewer #3. This
+                                        is, of course, only part of
+                                        the workflow, that takes
+                                        produced results the plots
+                                        them, but the production of
+                                        the results themselves should
+                                        be automatized</aside>
+                                </section>
+
                                 <section><h1>➁ You have the idea, you
                                     own the product</h1>
                                     <h3 class="fragment">🔲 Reproducibility ☑ Openness ☑ Tests ☑ Collaboration</h3>
@@ -517,18 +545,84 @@ def build_paper_latex_arxiv(context):
                                 alt="kanban board for Ruben's thesis">
                                 </section>
 
-                                
+                                <section><h1>➂ Use common software development tools and practices</h1>
+                                    <h3 class="fragment">☑ Reproducibility ☑ Openness ☑ Tests ☑ Collaboration</h3>
+                                </section>
 
+                                <section><h1>As well as common
+                                    (industrial) data science best
+                                    practices</h1>
+                                    <h2 class="fragment">CI/CD
+                                        workflows, MLFlow...</h2>
+                                </section>
 
+                                <section><h1>Avoid smells</h1>
+                                    <pre><code>lint-python:
+    runs-on: ubuntu-18.04
+    name: Python source lint
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Export neccesary variables
+        run: |
+          echo "::set-env name=PYTHONPATH::${{github.workspace}}"
+          echo "::set-env name=KERAS_BACKEND::theano"
+      - name: Install necessary tools
+        run: pip install nox
+      - name: Perform linting
+        working-directory: ${{ github.workspace }}
+        run: nox -e lint</code></pre>
+                                    <aside class="notes">This is a
+                                    GitHub action that is applied to a
+                                    software library that we applied
+                                    to a different paper that, alas,
+                                    has not been accepted into a
+                                    conference so far. Not only we
+                                        test, but we also
+                                    <em>lint</em> to use the best
+                                    practices in the Python code we're
+                                    using.</aside>
+                                </section>
                             </section>
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
+                            <section><h1>Biggest hurdle?</h1>
+                                <h1 class="fragment">Changing from
+                                    pay-to-publish to
+                                pay-to-deploy-workflow</h1>
+                            </section>
+
+                            <section><h1>Join the Agile Science
+                            Manifesto</h1>
+                            </section>
+
+                            <section><h1>To make science more</h1>
+                                <h1 class="fragment">✓ Open</h1>
+                                <h1 class="fragment">✓ Adaptive</h1>
+                                <h1 class="fragment">✓ Sustainable</h1>
+                            </section>
+
+                            <section
+                            data-background="https://live.staticflickr.com/95/239126627_40897e494e_o_d.jpg"><h1>Let's
+                            leave waterfalls for
+                            rainbows</h1></section>
+
+                            <section
+		data-background="https://live.staticflickr.com/8634/15697755504_4356c79562_o_d.jpg"><h1>Let's
+		                make science agile</h1>
+                                <h2 class="fragment">Just like data
+		science</h2>
+                            </section>
+		</div>
+	    </div>
+
+	    <script src="dist/reveal.js"></script>
+	    <script src="plugin/notes/notes.js"></script>
+	    <script src="plugin/markdown/markdown.js"></script>
+	    <script src="plugin/highlight/highlight.js"></script>
+	    <script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
