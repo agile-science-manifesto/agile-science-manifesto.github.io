@@ -264,8 +264,8 @@
                                 <em>pull requests</em></h1>
                                 <h2 class="fragment">Also issues,
                                     forks... </h2>
-
-                                <aside class="notes">Pull request are
+                                <h3 class="fragment">Free <a href="https://github.com/rhgarcia/made_recommender/pull/37">vulnerability scanning</a></h3>
+                                    <aside class="notes">Pull request are
                         a mechanism by which you can suggest changes,
                         justifying them, over the code base. These can
                         be discussed and eventually accepted by the
@@ -322,8 +322,8 @@
                             </section>
 
                             <section
-                    data-background="img/filename-too-long.png"><h1
-                                                                    class="fragment">Sources
+                                data-background="img/filename-too-long.png">
+                                <h1 class="fragment">Sources
                                 change</h1>
 
                                 <aside class="notes">This revealed a
@@ -344,14 +344,128 @@
                                 <h1 class="fragment">Testing at all
                                     levels over hypotheses proved once</h1>
                                 <aside class='notes'>You need of
-                                course to prove some hypothesis over
-                                your data. 
-                            
-                    </section>
-                    
-		    <section data-background='https://live.staticflickr.com/900/27194796608_53fdbea2eb_k_d.jpg'><h1>Doing science in XXI</h1>
-			    <h2 class='fragment'>Just like it used to be</h2>
-			  </section>
+                                    course to prove some hypothesis over
+                                    your data. But that's the end test,
+                                    the "integration" test. Data, code,
+                                    everything needs to pass many tests
+                                    before arriving to that.</aside>
+                            </section>
+
+                            <section><h1>I needed to change
+                                <code>\ref</code> →
+                                <code>\cite</code></h1>
+                                <h2 class="fragment">Easy,
+                                    amirite?</h2>
+                                <aside class="notes"> Or maybe not. The paper was written using
+                                    Pweave. It allows you to mix Python code
+                                    with LaTeX, including the data processing
+                                    workflow into the paper itself. Great,
+                                    right? Well, yes, but you need to install
+                                    the Python toolchain to generate it.
+                                    And this was not specified:
+                                    `requirements.txt` was missing.
+                                    Trial and error, you finally obtain all
+                                    the tools (and I need to put them into the
+                                    requirements.txt).
+                                    But then the file was missing, and I
+                                    needed to download it. And I didn't know
+                                    where to find it... I needed to look it
+                                    up... But then, I didn't have our own data
+                                    file, and when I found one, I wasn't sure
+                                    it was the last version...
+                                    Long story short: I managed to do
+                                    it. But if this has happened in a company,
+                                    and this was a production application, I'd
+                                    be fired. Yet this happens in science, all
+                                    the time. In this talk I'd like to propose
+                                    some ways to make it a
+                                    bit better."
+                                </aside>
+
+                            </section>
+
+                            <section><h1>✓ It was
+                                    <em>open</em></h1>
+                                    <h1 class="fragment">✓ It was
+                                        <em>developed using issues</em></h1>
+                                    <h1 class="fragment">✓ It was
+                                        <em>tested</em></h1>
+
+                                    <aside class="notes">In fact, the
+                                        paper itself had Python code included
+                                        that generated the tables and
+                                        figures. The fact that all
+                                        stakeholders were involved
+                                        implied that anyone, the main
+                                        contributor to the paper, or
+                                        anyone else involved, like me,
+                                        should be able to replicate
+                                        it. But...</aside>
+
+                                </section>
+
+                                <section><h1>Dude, <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/DudeWheresOurCar"> where's my data?</a></h1>
+                                    <pre><code data-line-numbers="6|7">import pandas as pd
+import pygraphviz as pgv
+from IPython.display import display, Latex
+from scipy import stats
+
+DBTROPES_GENERATED_FILE_PATH = '/Users/phd/Downloads/dbtropes/dbtropes-20160701.nt'
+TROPESCRAPER_GENERATED_FILE_PATH = '/Users/phd/workspace/made/tropescraper/bin/tvtropes.json'</code></pre>
+
+                                    <aside class="notes">Despite doing
+                                        everything right, these paths, which
+                                        were invoked from the paper itself,
+                                        use hardcoded paths. The problem is
+                                        not only that, but the fact that, in
+                                        the second case, it uses a generic
+                                        name that is outside source
+                                        control... And thus can be
+                                        anything. Big risk: use another
+                                        version, and <em>the whole
+                                        paper will change</em>; this
+                                        corresponds to the trope <a
+                                                                     href="https://tvtropes.org/pmwiki/pmwiki.php/Main/ForWantOfANail">For
+                                        want of a nail</a>, BTW.</aside>
+                                </section>
+
+                                <section data-background="https://live.staticflickr.com/65535/50817730283_ce0f498af8_o_d.jpg"><h2>4th, last,
+                                hypothesis</h2>
+                                    <h1
+                                        class="fragment">Reproducibility
+                                <em>and</em> replicability over publishability</h1>
+
+                                    <aside
+                                class="notes">Reproducibility, or
+                                replicability, is the most important
+                                thing. You need to produce the same
+                                results over and over again. It's the
+                                most important thing for oneself:
+                                small changes in a paper should be
+                                doable without a total change in the
+                                tables and charts that will possible
+                                change the results. But it's, of
+                                course, essential in science. Somebody
+                                might want to build on our results. Or
+                                replicate the paper, filtering the
+                                results in some way. Or simply check
+                                that effectively JamesBond is the
+                                movie (or franchise) with the most
+                                tropes, ever. Anything at
+                                all. Replicability will go a long way
+                                towards solving the science (data)
+                                problem, and the rest of the problems
+                                associated with science as it's done today. 
+                                </section>
+                            </section>
+
+<!-- Changes proposed -->
+                            <section>
+                                <section data-background='https://live.staticflickr.com/900/27194796608_53fdbea2eb_k_d.jpg'><h1>Doing science in XXI</h1>
+			            <h2 class='fragment'>Just like it used to be</h2>
+			        </section>
+
+                            </section>
 			</div>
 		</div>
 
