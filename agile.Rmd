@@ -1,13 +1,13 @@
 ---
 title: 'Agile (data) science: a (draft) manifesto'
 author: "J. J. Merelo"
-date: "3/4/2021"
+date: "11/4/2021"
 output:
   pdf_document:
     keep_tex: true
 bibliography: agile.bib
 abstract: Science has a data management problem, as well as a project management problem.
-  While industry data science teams have embraced the *agile* mindset, and adopted
+  While industrial grade data science teams have embraced the *agile* mindset, and adopted
   or created all kind of tools to create reproducible workflows, academia-based science
   is still (mostly) mired in a mindset that's focused on a single final product (a
   paper), without focusing on incremental improvement and, over all, reproducibility.
