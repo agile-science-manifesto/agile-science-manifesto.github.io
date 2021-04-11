@@ -1,15 +1,5 @@
-# My own version of the reveal.js slides framework
+# A manifesto for agile data science
 
-This version that I personally use includes
+To fix the reproducibility and replicability crisis of modern science, and reduce the anxiety and bad career prospects of researchers, science needs to follow the path of software development and become agile.
 
-* Additional CSS for things like headers over pictures.
-* Defaults for width, controls, progress and history.
-
-Eliminates
-* Markdown-related plugins from the configuration
-* Fonts
-* Sources
-
-Please check [the original README.md in the original repo](https://github.com/hakimel/reveal.js/blob/master/README.md)
-
-This version has been updated to 4.1.0 of reveal.js
+Here is a [paper](agile.html) and a [presentation](ac-ds.html) to justify a set of new hypotheses that would improve the situation of science. They're open to suggestions, just open a pull request.
