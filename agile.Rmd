@@ -3,14 +3,16 @@ title: 'Agile (data) science: a (draft) manifesto'
 author: "J. J. Merelo"
 date: "11/4/2021"
 output:
+  html_document:
+    df_print: paged
   pdf_document:
-    keep_tex: true
+    keep_tex: yes
 bibliography: agile.bib
 abstract: Science has a data management problem, as well as a project management problem.
-  While industrial grade data science teams have embraced the *agile* mindset, and adopted
-  or created all kind of tools to create reproducible workflows, academia-based science
-  is still (mostly) mired in a mindset that's focused on a single final product (a
-  paper), without focusing on incremental improvement and, over all, reproducibility.
+  While industrial grade data science teams have embraced the *agile* mindset, and
+  adopted or created all kind of tools to create reproducible workflows, academia-based
+  science is still (mostly) mired in a mindset that's focused on a single final product
+  (a paper), without focusing on incremental improvement and, over all, reproducibility.
   In this report we argue towards the adoption of the agile mindset and agile data
   science tool in academia, to make a more responsible, and over all, reproducible
   science.
@@ -46,7 +48,7 @@ Science arguably can't be science if it's not reproducible. However, there are m
 
 <!-- from this follows deploy *and* publish -->
 
-### Testing at all levels over proved hypotheses
+### Testing at all levels over hypotheses proved once
 
 Essentially, all papers try to prove something, to answer a research question or to prove a hypothesis over data that is characterized in a certain way. Datasets are static, and hypotheses are proved over provided datasets, which are increasingly available, although that is not necessarily a given.
 
