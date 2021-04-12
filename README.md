@@ -20,3 +20,10 @@ use
 to discuss, or [pull
 requests](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/pulls)
 to suggest any change or addition.
+
+## Sign
+
+If you want to adhere to this manifesto, add your name to [this
+file](adherents.md) via a [pull
+request](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/pulls)
+
