@@ -24,6 +24,6 @@ to suggest any change or addition.
 ## Sign
 
 If you want to adhere to this manifesto, add your name to [this
-file](adherents.md) via a [pull
+file](adherents) ([source](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/blob/main/adherents.md) via a [pull
 request](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/pulls)
 

@@ -1,7 +1,9 @@
 ---
 title: 'Agile (data) science: a (draft) manifesto'
-author: "J. J. Merelo"
-date: "11/4/2021"
+author:
+  - JJ Merelo, University of Granada
+  - Mario García-Valdez, Tijuana Tec
+date: "12/4/2021"
 output:
   html_document:
     df_print: paged
