@@ -11,3 +11,12 @@ Here is a [paper](agile.html) and a [presentation](ac-ds.html) to justify a set 
 3. Open over closed
 4. Stakeholder collaboration over vertical chains-of-command
 
+## Discuss
+
+This is [hosted in
+GitHub](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io). Please
+use
+[issues](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/issues)
+to discuss, or [pull
+requests](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/pulls)
+to suggest any change or addition.
