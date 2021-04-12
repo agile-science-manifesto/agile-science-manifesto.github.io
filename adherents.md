@@ -5,3 +5,4 @@ Add your name and affiliation to [this file via PR](https://github.com/agile-sci
 | Name       | Institution/Company |
 |------------|---------------------|
 | [JJ Merelo](https://github.com/JJ) | University of Granada (Spain) |
+| [Alberto Guillén](https://github.com/aguillenATC) | University of Granada (Spain) |
