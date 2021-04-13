@@ -16,7 +16,7 @@ abstract: Science has a data management problem, as well as a project management
   science is still (mostly) mired in a mindset that's focused on a single final product
   (a paper), without focusing on incremental improvement and, over all, reproducibility.
   In this report we argue towards the adoption of the agile mindset and agile data
-  science tool in academia, to make a more responsible, and over all, reproducible
+  science tools in academia, to make a more responsible, and over all, reproducible
   science.
 ---
 
@@ -40,9 +40,13 @@ This situation has been challenged repeatedly, lately, mainly after the introduc
 
 This is certainly related to Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science [@robson_opensci] has provided new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management [@uberlyftothers], there are neither clear guidelines nor best practices nor resources where scientific data management can be done at scale and, what's more important, in a way that can have a (positive) outcome for your career.
 
-## Hypothesis on agile science
+## Hypotheses on agile science
 
-We certainly need to acknowledge first that science, the way it is now, has many problems. Many of them start and end with funding, but we should also realize that using XIX century formats to publish XXI century research leaves a lot to be desired. However, the fundamental problem is not in products, is in practitioner's workflows themselves, and this ends in frustration and, when major crises like COVID-19 strike, major problems carrying out much-needed research that can be used as a foundation for the next, also necessary, step. So we will try to present, and defend, a series of hypothesis that would be the foundation of agile science, and that would contribute to solve the data management problem science currently has. <!-- this last part is difficult to read - M -->
+We certainly need to acknowledge first that science, the way it is now, has many problems. Many of them start and end with funding (or lack thereof), but we should also realize that using XIX century formats to publish XXI century research leaves a lot to be desired.
+
+However, the fundamental problem is not in what is produced (mainly papers), is in practitioner's workflows themselves, created and maintained in order to produce that single product. The anomalies and problems caused by these hierarchical, paper-oriented, workflows end in frustration and, when major crises like COVID-19 strike, major problems carrying out much-needed (reproducible and replicable) research that can be used as a foundation for the next, also necessary, step.
+
+So we will try to present, and defend, a series of hypotheses that would be the foundation of agile science, and that would contribute to solve the data management and productivity problems science currently has.
 
 ### Reproducibility over publishability
 
