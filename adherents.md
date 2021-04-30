@@ -1,4 +1,4 @@
-# I adhere to the [agile science manifesto](index.html) |[source](README.md)
+# I adhere to the [agile science manifesto](index.html) | [source](README.md)
 
 Add your name and affiliation to [this file via PR](https://github.com/agile-science-manifesto/agile-science-manifesto.github.io/blob/main/adherents.md)
 
