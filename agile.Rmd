@@ -3,42 +3,43 @@ title: 'Agile (data) science: a (draft) manifesto'
 author:
   - JJ Merelo, University of Granada
   - Mario García-Valdez, Tijuana Tec
-date: "12/4/2021"
+date: "30/4/2021"
 output:
-  html_document:
-    df_print: paged
   pdf_document:
     keep_tex: yes
+  html_document:
+    df_print: paged
 bibliography: agile.bib
 abstract: Science has a data management problem, as well as a project management problem.
   While industrial grade data science teams have embraced the *agile* mindset, and
-  adopted or created all kind of tools to create reproducible workflows, academia-based
+  adopted or created all kind of tools to manage reproducible workflows, academia-based
   science is still (mostly) mired in a mindset that's focused on a single final product
   (a paper), without focusing on incremental improvement and, over all, reproducibility.
   In this report we argue towards the adoption of the agile mindset and agile data
-  science tools in academia, to make a more responsible, and over all, reproducible
+  science tools in academia, to make a more responsible, sustainable, and above all, reproducible
   science.
 ---
 
 ## Introduction
 
-By *agile*, we usually imply a mindset applied to the whole software development lifecycle that is customer-centered and focused on continuous improvement of increasingly complex minimally viable products. The name comes from the Agile Manifesto [@beck2001manifesto], literally "Manifesto for agile software development." This manifesto has certainly changed the way software at large is developed and become mainstream, spawning many different methodologies and best practice guidelines. It has proved to be an efficient way of carrying out all kind of projects, from small to large-scale ones, mitigating the presence of bugs and proving to be more efficient [@abrahamsson2017agile] than the methodology that prevailed previously (and still today in many sectors), generally called *waterfall* [@andrei2019study], which separated (or *siloed*) different teams doing from the specification to the testing, with every team acting at other parts of the lifecycle. 
+By *agile*, we usually imply a mindset applied to the whole software development lifecycle that is customer-centered and focused on continuous improvement of increasingly complex minimally viable products. The name comes from the Agile Manifesto [@beck2001manifesto], literally called "Manifesto for agile software development." This manifesto has certainly changed the way software at large is developed and become mainstream, spawning many different methodologies, tools, and best practice guidelines. It has proved to be an efficient way of carrying out all kind of projects, from small to large-scale ones, mitigating or reducing the presence of bugs and proving to be more efficient [@abrahamsson2017agile] than the methodology that prevailed previously (and still today in many sectors), generally called *waterfall* [@andrei2019study], which separated (or *siloed*) different teams doing from the specification to the testing, with every team acting at other parts of the lifecycle. 
 
-Despite being prevalent in software development (and, in general, project development) environments, it certainly has not reached science at large, which arguably follows a method that closely follows the waterfall methodology.
+Despite being prevalent in software development (and, in general, project development) environments, it certainly has not reached science at large, which arguably follows a method that closely follows the waterfall methodology, and in any case differ in methodology and objectives with mainstream software development teams [@NAGUIB20101505].
 
-Since data science and engineering has become an integral part of the workflow in many companies, *agile* data science is, mostly, the way it's done. Again, this is mostly because data science is mostly done in the industry, not academia, which does not have the same kind of workflows to deal with its own data.
-<!-- Too many 'mostly' - Mario --> 
+Since data science and engineering has become an integral part of the workflow in many companies, *agile* data science [@engstrom2020towards] is, mostly, the way it's done. Again, this is mainly because data science is mostly done in the industry, not academia, which does not have the same kind of workflows to deal with its own data.
 Our intention is to try and put science back in data science. We will try and examine critically how science is done, what are the main reasons why this agile mindset is not being used in science, how would *agile* concepts translate to science, and eventually what agile data science and science at large would look like.
 
 We will first present what attempts have been made to translate agile concepts to the (academic) world of science.
 
 ## State of the art
 
-Despite being an age-old pursuit and probably, as such, ripe for disruption, science has been done in pretty much the same way for years. In very rough brushstrokes, it starts with a funding application, that includes a workplan, that generally works hierarchically from principal investigators to senior and then junior researchers, producing a series of artifacts which always include papers (which are snapshots of the state of the art), and in some cases software, protocols, or even, in some limited areas (mainly astronomy and medicine), workflows.
+Despite being an age-old pursuit and probably, as such, ripe for disruption, science has been done in pretty much the same way for years. In very rough brushstrokes, it starts with a funding application, that includes a workplan, and generally works hierarchically from principal investigators to senior and then junior researchers, producing a series of artifacts which always include papers (which are snapshots of the state of the art), and in some cases software, protocols, or even, in some limited areas (mainly astronomy and medicine), workflows.
 
-This situation has been challenged repeatedly, lately, mainly after the introduction of the aforementioned agile manifesto. In [@agile-science], which is essentially a presentation and not a formal paper, several proposals are made to apply agile "methods" in research; something that has been proposed repeatedly in later years, for instance in this blog post [@carattino-agile-dev] and even in this paper [@9140255] which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced *agile research* [@AgileResearchBlog] and even drafted an Agile Research Manifesto [@AgileResearch].  This was almost totally forgotten until two years ago when a blog called "Agile Science" [@XavierAgileScience] brought it up. Independently, some researchers proposed an (almost) ultimatum for Agile Research in [@way2009agile], and eventually, it became fruitful in a restricted environment, mHealth, in  [@wilson2018agile]. This goes to show that it's still part of the fringe, and has not been incorporated either to funding agencies guidelines or the common science and research practice.
+This situation has been challenged repeatedly, lately and mainly after the introduction of the aforementioned agile manifesto. In [@agile-science], which is essentially a presentation and not a formal paper, several proposals are made to apply agile "methods" in research; something that has been proposed repeatedly in later years, for instance in this blog post [@carattino-agile-dev] and even in this paper [@9140255] which specifies an agile methodology, Scrum, and how it can be applied specifically to data science projects. As a matter of fact, there were several attempts to raise the issue again and bring it to the attention of the research community: a blog post introduced *agile research* [@AgileResearchBlog] and even drafted an Agile Research Manifesto [@AgileResearch].  This was almost totally forgotten until two years ago when a blog called "Agile Science" [@XavierAgileScience] brought it up. Independently, some researchers proposed an (almost) ultimatum for Agile Research in [@way2009agile], and eventually, it became fruitful in a restricted environment, mHealth, in  [@wilson2018agile]. Our own work [@merelo13] proposed inclusing very common software development practices, such as testing, in scientific software development (in this case, in the context of evolutionary computation). This goes to show that it's still part of the fringe, and has not been incorporated either to funding agencies guidelines or the common science and research practice.
 
-This is certainly related to Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science [@robson_opensci] has provided new venues and new ways of understanding and producing science. However, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management [@uberlyftothers], there are neither clear guidelines nor best practices nor resources where scientific data management can be done at scale and, what's more important, in a way that can have a (positive) outcome for your career.
+These efforts are certainly related to Open Science: Open Science adapts the main ideas of open source software development to the publication of scientific results and artifacts; the push for Open Science [@robson_opensci] has provided new venues and new ways of understanding and producing science. As a matter of fact, open science that publishes their work as open source software more closely follow these best practices [@groen2015software] that does that don't.
+
+In other cases, the uptake of new methodologies is still very slow. While most companies have created pipelines for data management [@uberlyftothers], there are neither clear guidelines nor best practices nor resources where scientific data management can be done at scale and, what's more important, in a way that can have a (positive) outcome for your career.
 
 ## Hypotheses on agile science
 
