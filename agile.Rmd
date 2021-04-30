@@ -10,7 +10,7 @@ output:
   html_document:
     df_print: paged
 bibliography: agile.bib
-abstract: Science has a data management problem, as well as a project management problem.
+abstract: Science has a data management as well as a project management problem.
   While industrial grade data science teams have embraced the *agile* mindset, and
   adopted or created all kind of tools to manage reproducible workflows, academia-based
   science is still (mostly) mired in a mindset that's focused on a single final product
